@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./assets/css/foundation.css"> -->
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Pay Up</title>
+    <link rel="icon" type="favicon" href="assets/images/favicon.ico">
+    <script type="text" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/48/9/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/48/9/util.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/48/9/controls.js"></script>
+    <!-- <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/48/9/places_impl.js"></script> -->
+    
+</head>
+
+<body>
+    <header>
+        <h1 class="page-title">Pay Up</h1>
+
+<!-- short description about the site -->
+        <p>Welcome to Pay up, where we do the calculations for you.
+            <br>
+            Enter the information below and click start!
+        </p>
+
+        <form class="align-center-middle input-group" id="bill-form">
+          <div>
+            <div class="bill-group">
+              <input type="text" name="bill-name" placeholder="What is the bill for?" />
+            </div>
+
+            <div class="bill-group">
+              <input type="number" min="0" name="peopleamount" placeholder="How many people" />
+            </div>
+          </div>
+        </form>
+          
+        <!-- <form class="align-center-middle input-group" id="bill-form">
+            <div>
+              <div class="bill-group">
+                <input type="text" name="bill-name" placeholder="What is the bill for?" />
+              </div>
+              <div class="bill-group">
+                <input type="number" min="0" name="peopleamount" placeholder="How many people" />
+              </div>
+            
+            </div>
+          </form> -->
+          <div class="grid-x grid-padding-x align-center">
+              <div>
+             <!-- Commented this out to not lose the code, was not able to make a link using the button function, help!
+               
+              <button class="btn" id="start-bill" type="submit">Start</button> --> 
+
+             <!-- Code below is the attempt to make the button link, it pops up but doesnt go to the secondary page
+               
+              <a href="./calculate.html">
+              <button class="btn" id="calculate" type="submit">Calculate</button>
+            </a>
+ -->
+            
+            
+                <a class="btn cell small-4 " href=./calculate.html>Start</a>
+                <br> 
+              </br>
+              <br>
+            </br>
+              <h6>For a Free Weather Update in your local area, Please Enter Your Address:</h6>
+              <input type="text" id="address" class="input is-medium pac-target-input" placeholder="Enter your address" autocomplete="off">
+              </div>
+              </div>
+          
+
+            
+            
+          </div>
+           
+        </header>
+        <main class="">
+            <div class="columns">
+<!-- need to move this to the left -->
+                <!-- <div class="column is-8 module-box align-center-middle"> -->
+                    <!-- <div class="banner"> -->
+                      <div class="grid-x grid-padding-x align-center"></div>
+                        Current Weather Temperature in Your Location is
+                        <input type="text" id="" class="input is-medium pac-target-input" placeholder="Your Current Temperature" autocomplete="off">
+                    </div>
+                    <div class="weather-container d-flex flex-row justify-content-around col-8 text-center"></div>
+                    <div id="weather-content" class="module-box-content align-center-middle">
+    
+                    </div>
+                </div>
+            </div>
+        </main>      
+       
+    </header>
+
+    <!--Main Sectionwas moved to calculate page, leaving this hear incase we want to take a different approach to having a second page
+    <main class="page-content" id="page-content">
+            <section class="bill-list-wrapper">
+              <h2 class="list-title">Current Bill</h2>
+              <ul class="bill-list" id="bill-to-calc"></ul>
+              
+                <input type="text" name="names" placeholder="Person 1" />
+                <br>
+                <input type="text" name="amount" placeholder="How much is the bill?" />
+                
+                 <input type="text" name="names" placeholder="Person 2" />
+                <br>
+                <input type="text" name="amount" placeholder="How much is the bill?" />
+                <input type="text" name="names" placeholder="Person 3" />
+                <br>
+                <input type="text" name="amount" placeholder="How much is the bill?" />
+                <input type="text" name="names" placeholder="Person 4" />
+                <br>
+                <input type="text" name="amount" placeholder="How much is the bill?" />
+                
+                 <input type="text" name="names" placeholder="Person 2" />
+                <br>
+                <input type="text" name="amount" placeholder="How much is the bill?" />
+                <input type="text" name="names" placeholder="Person 3" />
+                <br>
+                <input type="text" name="amount" placeholder="How much is the bill?" />
+                <input type="text" name="names" placeholder="Person 4" />
+                <br>
+                <input type="text" name="amount" placeholder="How much is the bill?" />
+                <input type="text" name="names" placeholder="Person 5 " />
+                <br>
+                <input type="text" name="amount" placeholder="How much is the bill?" />
+                
+                
+                <div class="bill-calculation">
+                  <button class="btn" id="calculate" type="submit">Calculate</button>
+                </div>
+              
+            </section>
+          -->
+          
+           <p id="paragraph">
+
+            Pay up provides a safe, simple, quick way to spilt group expenses for dinners, roommate expenses, presents, vacations, and more. 
+            Eliminating the hastle of calculating and the awkward conversation reminding someone they haven’t sent their portion. 
+            Enter everyone's name and amounts spent, our site will tell you who owes and how much is needed how to settle up.
+            
+           </p>
+           <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+           <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn-WIblb4Ot7xZLmu-mPLPJHN1Tv4iLyI&libraries=places&callback=initAutocomplete" async></script>
+   <script src="./assets/js/weather.js"></script>
+   <script src="./assets/js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>

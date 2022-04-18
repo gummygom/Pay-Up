@@ -1,0 +1,116 @@
+* {
+  background-color: #CFD3EC;
+}
+
+.page-title {
+  font-size: 450%; 
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  line-height: 0.7;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  padding: 20px;
+  margin: 30px;
+}
+
+p {
+  text-align: center;
+  line-height: 1.5;
+  padding: 20px;
+  font-size: 150%;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  }
+
+#paragraph {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 120%;
+  padding-left: 250px;
+  padding-right: 250px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color: rgb(44, 43, 43);
+}
+
+.breaker {
+    margin: none;
+}
+
+form {
+text-align:center;
+}
+
+.btn {
+  background-color: blueviolet;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); 
+}
+
+.btn:hover {
+  opacity: 1;
+  color:white !important;
+}
+
+.btn:active {
+box-shadow: 0 5px #666;
+transform: translateY(5px);
+
+}
+
+h2.list-title {
+  font-size: 300%; 
+  font-family: chalkduster;
+  line-height: .1;
+  background-repeat: no-repeat;
+  display:inline-block;
+  justify-content: center;
+  font-weight: 450;
+  padding: 20px;
+  margin: 30px;
+}
+
+section {
+text-align:center;
+}
+
+.bill-calculation {
+  padding-bottom: 20px;
+}
+
+.FXConvert {
+    font-family: Chalkduster;
+    font-size: 200%;
+    color: rgb(63, 60, 60);
+    padding: 20px;
+}
+
+.FX-para {
+  font-family: Chalkduster;
+    color: rgb(59, 58, 58);
+    padding-top: 1px;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: left;
+}
+
+.To {
+  font-family: Chalkduster;
+  font-size: 100%;
+  padding-bottom: 5px;
+}
+
+.banner {
+  text-align: center;
+}
